@@ -1,0 +1,103 @@
+/* WebKit */
+
+:root {
+  /* colors */
+  --main-clr-red: rgb(221, 2, 0);
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: #000;
+
+  /* fonts */
+  --helvatica: Helvetica, sans-serif;
+}
+
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--helvatica);
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: var(--main-clr-red);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.navbar a:hover {
+  color: var(--clr-black);
+  opacity: 0.5;
+  border-bottom: 2px solid var(--clr-white);
+  width: fit-content;
+}
+
+/* !FOOTER */
+
+footer {
+  background-color: var(--main-clr-red);
+  height: fit-content;
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-evenly;
+  padding: 1% 0;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+}
+
+section h3 {
+  font-weight: normal;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+footer section a {
+  color: var(--clr-white);
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+footer section a:hover,
+footer section h3:hover {
+  border-bottom: 2px solid var(--clr-white);
+  width: fit-content;
+}

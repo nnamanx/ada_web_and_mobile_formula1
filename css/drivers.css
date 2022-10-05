@@ -1,0 +1,19 @@
+/* Driver lists */
+
+table {
+  margin: 0 auto;
+}
+
+table tr td,
+table tr th {
+  border-bottom: 1px solid var(--main-clr-red);
+  padding-left: 10px;
+  width: 300px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+table tr td:hover {
+  font-size: 1.1rem;
+  color: var(--main-clr-red);
+}
